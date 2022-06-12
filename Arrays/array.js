@@ -32,3 +32,27 @@ let newArray = pythonAndRuby.concat(['Haskell','Clojure'])
 let arrayToString = arr3.join(',')
 console.log(newArray)
 console.log(arrayToString)
+
+// EXERCISE ON ARRAY LOOPING
+let people = ['Grey','Mary','Devon','James']
+for(let items of people){
+    console.log(items)
+}
+
+let addPeople = people.shift()
+let removePeopleFromTheBack = people.pop()
+let removePeople = people.unshift('Matt')
+let addPeopleToTheBack = people.push('Abdullahi')
+
+for(let i = 0; i<people.length - 2; i++){
+    console.log(people[i])
+}
+
+let peopleSlice = people.slice(2)
+people.splice(2, 1, 'Eli', 'Artie')
+console.log(peopleSlice)
+console.log(people)
+console.log(people.indexOf('Mary'))
+
+let withBob = people.concat('Bob')
+console.log(withBob)
